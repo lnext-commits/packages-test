@@ -1,0 +1,21 @@
+<?php
+
+
+namespace {{namespace}};
+
+
+use App\Http\ServiceFacades\Traits\ResponseForArray;
+
+class DummyClass
+{
+    use ResponseForArray;
+
+    public function NAME ($option, $key): array|string
+    {
+        $arr = [
+
+        ];
+
+        return $this->returnArray($arr, $option, $key, __FUNCTION__);
+    }
+}

@@ -1,0 +1,16 @@
+<?php
+
+namespace {{namespace}};
+
+use Illuminate\Http\Request;
+
+class BaseServiceFacade
+{
+    protected static function setCorrectValues(array $arguments): Request
+    {
+        $request = new Request();
+        $request->merge($arguments);
+        $request->merge(['from_object' => true]);
+        return $request;
+    }
+}

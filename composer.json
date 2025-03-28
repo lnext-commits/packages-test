@@ -1,0 +1,21 @@
+{
+    "name": "lnext/servise-facade",
+    "description": "non",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^9.0"
+    },
+    "license": "TIM",
+    "autoload": {
+        "psr-4": {
+            "Lnext\\ServiseFacade\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "skorilkin aleksey",
+            "email": "own@lnext.space"
+        }
+    ]
+}

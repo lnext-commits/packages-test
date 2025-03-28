@@ -1,0 +1,15 @@
+<?php
+
+
+namespace {{namespace}};
+
+
+class DummyClass
+{
+
+    public function __construct()
+    {
+
+
+    }
+}

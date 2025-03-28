@@ -1,0 +1,34 @@
+<?php
+
+
+namespace {{namespace}};
+
+
+useDummy
+use App\Http\ServiceFacades\ServiceInterfaces\FacadeInterface;
+use App\Http\ServiceFacades\ParentClasses\BaseServiceFacade;
+use Illuminate\Http\Request;
+
+class DummyClass extends BaseServiceFacade implements FacadeInterface
+{
+
+    public static function act(Request $request, string $method)
+    {
+       actMethod
+    }
+
+    public static function get($item, string $method)
+    {
+       getMethod
+    }
+
+    public static function salvatory(string $method, string $option = 'default', string $key = null): array|string
+    {
+       salvatoryMethod
+    }
+
+    public static function actObject(array $inputArguments, $method): void
+    {
+        self::act(self::setCorrectValues($inputArguments), $method);
+    }
+}
