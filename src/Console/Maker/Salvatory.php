@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands\MakeCommands\Maker;
+namespace Lnext\ServiceFacades\Console\Maker;
 
 use Illuminate\Console\GeneratorCommand;
 
@@ -24,7 +24,7 @@ class Salvatory extends GeneratorCommand
 
     public function getStub(): string
     {
-        return app_path().'/Console/Commands/MakeCommands/stubs/serviceSalvatory.stub';
+        return base_path().'vendor/lnext/service-facades/src/Console/stubs/serviceSalvatory.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string

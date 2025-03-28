@@ -1,31 +1,28 @@
 {
-  "name": "lnext/servise-facade",
-  "description": "non",
-  "type": "library",
-  "require": {
-    "php": "^8.1",
-    "laravel/framework": "^9|^10|^11|^12"
-  },
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Lnext\\ServiseFacade\\": "src"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Barryvdh\\Debugbar\\ServiceProvider"
-      ],
-      "aliases": {
-        "Debugbar": "Barryvdh\\Debugbar\\Facade"
-      }
-    }
-  },
-  "authors": [
-    {
-      "name": "skorilkin aleksey",
-      "email": "own@lnext.space"
-    }
-  ]
+    "name": "lnext/service-facades",
+    "description": "The architectural solution of the file system for laravel",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^9|^10|^11|^12"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lnext\\ServiceFacades\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lnext\\ServiceFacades\\ServiceFacadesProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Skorilkin Aleksey",
+            "email": "own@lnext.space"
+        }
+    ]
 }

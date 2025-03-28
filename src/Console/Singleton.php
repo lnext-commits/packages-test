@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands\MakeCommands;
+namespace Lnext\ServiceFacades\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -26,10 +26,8 @@ class Singleton extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         if ($this->argument('name') === null) {
             $name = $this->ask('enter the name of the service');
@@ -69,7 +67,5 @@ class Singleton extends Command
         $this->comment('to support the IDE, run command if the ide helper is installed');
         $this->alert('php artisan ide-helper:generate');
 
-
-        return 0;
     }
 }

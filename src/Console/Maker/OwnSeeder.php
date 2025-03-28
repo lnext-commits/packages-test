@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands\MakeCommands\Maker;
+namespace Lnext\ServiceFacades\Console\Maker;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -28,7 +28,7 @@ class OwnSeeder extends GeneratorCommand
 
     public function getStub(): string
     {
-        return app_path().'/Console/Commands/MakeCommands/stubs/ownSeeder.stub';
+        return base_path().'vendor/lnext/service-facades/src/Console/stubs/ownSeeder.stub';
     }
 
     protected function getPath($name): string

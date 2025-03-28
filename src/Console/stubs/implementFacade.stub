@@ -1,0 +1,16 @@
+<?php
+
+
+namespace {{namespace}};
+
+
+use Illuminate\Http\Request;
+
+interface FacadeInterface
+{
+    public static function act(Request $request, string $method);
+
+    public static function get($item, string $method);
+
+    public static function salvatory(string $method, string $option = 'default', string $key = null): array|string; //$option may be value, key, full
+}

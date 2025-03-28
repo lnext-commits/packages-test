@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Console\Commands\MakeCommands\Maker;
+namespace Lnext\ServiceFacades\Console\Maker;
 
 use Illuminate\Console\GeneratorCommand;
 
-class extendFacade extends GeneratorCommand
+class ImplementFacade extends GeneratorCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'utility:extendFacade {name} ';
+    protected $signature = 'utility:implementFacade {name} ';
 
     /**
      * The console command description.
@@ -20,15 +20,15 @@ class extendFacade extends GeneratorCommand
      */
     protected $description = 'Create a new BaseServiceFacade class for ServiceFacade';
 
-    protected $type = 'BaseServiceFacade class'; // shows up in console
+    protected $type = 'FacadeInterface interface'; // shows up in console
 
     public function getStub(): string
     {
-        return app_path().'/Console/Commands/MakeCommands/stubs/extendFacade.stub';
+        return base_path().'vendor/lnext/service-facades/src/Console/stubs/implementFacade.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return "$rootNamespace/Http/ServiceFacades/ParentClasses";
+        return "$rootNamespace/Http/ServiceFacades/ServiceInterfaces";
     }
 }
