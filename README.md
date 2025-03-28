@@ -2,7 +2,7 @@
 ### _To install, use the composer command_
 
 ```sh
-php composer require lnext/service-facades
+composer require lnext/service-facades
 ```
 
 The full description can be found in the file: [doc-service-facade.md](https://github.com/lnext-commits/service-facades/blob/main/doc-service-facades.md)
@@ -18,15 +18,15 @@ Additional traits come with the package.
 
 - _ResponseForArray_
 ```sh
-php composer require lnext/response-for-array
+composer require lnext/response-for-array
 ```
 
 - _CheckRelation_
 ```sh
-php composer require lnext/check-relation
+composer require lnext/check-relation
 ```
 
 - _EndlessOptions_
 ```sh
-php composer require lnext/endless-options
+composer require lnext/endless-options
 ```

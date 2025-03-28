@@ -35,11 +35,8 @@ class ServiceFacadesProvider extends ServiceProvider implements DeferrableProvid
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
-        $configPath = __DIR__ . '/../config/ide-helper.php';
-        $this->mergeConfigFrom($configPath, 'ide-helper');
-
         $this->commands(
             [
                 MakeServiceFacade::class,
