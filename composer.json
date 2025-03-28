@@ -12,6 +12,13 @@
             "Lnext\\ServiseFacade\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lnext\\ServiceFacade\\LnextFacadeServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "skorilkin aleksey",
