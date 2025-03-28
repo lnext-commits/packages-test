@@ -24,7 +24,7 @@ class Salvatory extends GeneratorCommand
 
     public function getStub(): string
     {
-        return base_path().'vendor/lnext/service-facades/src/Console/stubs/serviceSalvatory.stub';
+        return base_path().'/vendor/lnext/service-facades/src/Console/stubs/serviceSalvatory.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string

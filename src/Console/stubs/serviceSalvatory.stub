@@ -4,7 +4,7 @@
 namespace {{namespace}};
 
 
-use App\Http\ServiceFacades\Traits\ResponseForArray;
+use Lnext\ServiceFacades\Traits\ResponseForArray;
 
 class DummyClass
 {

@@ -80,9 +80,15 @@ class MakeServiceFacade extends Command
             ]);
         }
 
-        if (!trait_exists('ResponseForArray')) {
+        if (!trait_exists('Lnext\ServiceFacades\Traits\ResponseForArray')) {
             $this->call('utility:responseArray', [
                 'name' => 'ResponseForArray',
+            ]);
+        }
+
+        if (!interface_exists('App\Http\ServiceFacades\ServiceInterfaces\FacadeInterface')) {
+            $this->call('utility:implementFacade', [
+                'name' => 'FacadeInterface',
             ]);
         }
 

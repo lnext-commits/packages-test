@@ -18,13 +18,13 @@ class ImplementFacade extends GeneratorCommand
      *
      * @var string
      */
-    protected $description = 'Create a new BaseServiceFacade class for ServiceFacade';
+    protected $description = 'Create a new FacadeInterface interface for ServiceFacade';
 
     protected $type = 'FacadeInterface interface'; // shows up in console
 
     public function getStub(): string
     {
-        return base_path().'vendor/lnext/service-facades/src/Console/stubs/implementFacade.stub';
+        return base_path().'/vendor/lnext/service-facades/src/Console/stubs/implementFacade.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string

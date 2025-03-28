@@ -28,7 +28,7 @@ class OwnSeeder extends GeneratorCommand
 
     public function getStub(): string
     {
-        return base_path().'vendor/lnext/service-facades/src/Console/stubs/ownSeeder.stub';
+        return base_path().'/vendor/lnext/service-facades/src/Console/stubs/ownSeeder.stub';
     }
 
     protected function getPath($name): string

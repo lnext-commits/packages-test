@@ -25,7 +25,7 @@ class FacadeSingleton extends GeneratorCommand
 
     public function getStub(): string
     {
-        return base_path().'vendor/lnext/service-facades/src/Console/stubs/facadeSingleton.stub';
+        return base_path().'/vendor/lnext/service-facades/src/Console/stubs/facadeSingleton.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string
